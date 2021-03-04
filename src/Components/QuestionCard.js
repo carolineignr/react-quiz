@@ -1,7 +1,6 @@
 import React from 'react';
 import Radio from './Inputs/Radio'
 
-
 export const QuestionCard = () => {
   const [currentAnswer, setCurrentAnswer] = React.useState('');
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
@@ -29,8 +28,8 @@ export const QuestionCard = () => {
 
   const getQuestions = () => {
     fetch('questions.json')
-      .then(response => response.json()).
-      then(data => setQuestions(data.questions));
+      .then(response => response.json())
+      .then(data => setQuestions(data.questions));
   }
 
   React.useEffect(() => {
