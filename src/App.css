@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  max-width: 100%;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.questions-card {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
